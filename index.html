@@ -1,0 +1,64 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Easy Markdown</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/css/main.css" rel="stylesheet"/>
+    <script src="assets/js/react.js"></script>
+    <script src="assets/js/react-dom.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/marked.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    / e a s y m a r k d o w n
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="nav navbar-nav navbar-right btn-group">
+                    <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-file"></i>
+                    </button>
+                    <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-save-file"></i>
+                    </button>
+                    <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-remove"></i>
+                    </button>
+                    <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-eye-open"></i>
+                    </button>
+                </div>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div id="content" class="row"></div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">An app by <a href="https://redmoses.me">Redmoses</a></p>
+        </div>
+    </footer>
+</div>
+<script type="text/babel" src="scripts/easymark.js"></script>
+<script type="text/babel">
+    // To get started with this tutorial running your own code, simply remove
+    // the script tag loading scripts/example.js and start writing code here.
+</script>
+</body>
+</html>
