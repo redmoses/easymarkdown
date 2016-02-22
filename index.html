@@ -1,64 +1,78 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
-    <title>Easy Markdown</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href="assets/css/main.css" rel="stylesheet"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <title>Easy Markdown</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div class="container">
+  <div class="container">
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
                     / e a s y m a r k d o w n
                 </a>
-            </div>
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <div class="nav navbar-nav navbar-right btn-group">
-                    <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-file"></i>
-                    </button>
-                    <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-save-file"></i>
-                    </button>
-                    <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-remove"></i>
-                    </button>
-                    <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-eye-open"></i>
-                    </button>
-                </div>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="nav navbar-nav navbar-right btn-group">
+            <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-file"></i>
+            </button>
+            <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-save-file"></i>
+            </button>
+            <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-remove"></i>
+            </button>
+            <button class="btn navbar-btn btn-info"><i class="glyphicon glyphicon-eye-open"></i>
+            </button>
+          </div>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
     </nav>
     <div class="container">
-        <div id="content" class="row"></div>
+      <div id="content" class="row"></div>
     </div>
     <footer class="footer">
-        <div class="container">
-            <p class="text-muted">An app by <a href="https://redmoses.me">Redmoses</a></p>
-        </div>
+      <div class="container">
+        <p class="text-muted">An app by <a href="https://redmoses.me">Redmoses</a></p>
+      </div>
     </footer>
-</div>
-<script type="text/babel" src="scripts/easymark.js"></script>
-<script type="text/babel">
-    // To get started with this tutorial running your own code, simply remove
-    // the script tag loading scripts/example.js and start writing code here.
-</script>
+  </div>
+  <script type="text/babel" src="scripts/easymark.js"></script>
+  <script type="text/babel">
+    var text = '<i>Markdown formatted text will be previewed here</i>'; var PrevBox = React.createClass({ convertMarkup: function (e) { var markup = marked(e.target.value.toString()); text = markup; if(markup === '') text = '<i>Markdown formatted text will be previewed here</i>';
+    this.setState({text: markup}); }, render: function () { return (
+    <div className="PrevBox">
+      <div className="col-xs-6 original">
+        <textarea className="form-control" placeholder="Enter your normal text here" onChange={this.convertMarkup} />
+      </div>
+      <div className="col-xs-6 preview">
+        <span dangerouslySetInnerHTML={{__html: text}}/>
+      </div>
+    </div>
+    ); } }); ReactDOM.render(
+    <PrevBox />, document.getElementById('content') );
+  </script>
 </body>
+
 </html>
