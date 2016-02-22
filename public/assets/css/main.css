@@ -1,0 +1,19 @@
+textarea.form-control, textarea.form-control:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+    resize: none;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.original {
+    height: 600px;
+    overflow-y: scroll;
+    border-right: 3px double whitesmoke;
+}
+
+.preview {
+    height: 600px;
+    overflow-y: scroll;
+}

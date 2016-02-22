@@ -1,0 +1,33 @@
+{
+  "name": "easy-markdown",
+  "version": "0.0.1",
+  "description": "simple markdown preview app",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reactjs/react-tutorial.git"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "comment",
+    "example"
+  ],
+  "author": "redmoses",
+  "bugs": {
+    "url": "https://github.com/redmoses/easymarkdown/issues"
+  },
+  "homepage": "https://github.com/redmoses/easymarkdown",
+  "engines" : {
+    "node" : "4.2.2"
+  }
+}
